@@ -41,7 +41,11 @@ ul {
     background-color: var(--white);
 }
 .toggle-icon i{
-    font-size: 35px;
+    font-size: 30px;
+}
+.logo-container img{
+    height: 37px;
+    width: 170px;
 }
 .topbar .left,
 .topbar .middle,
@@ -78,7 +82,21 @@ ul {
     font-size: 25px;
 }
 .topbar .voice-search {
-    font-size: 30px;
+    font-size: 25px;
+    background: var(--gray);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 5px;
+}
+.topbar .upload img{
+    width: 30px;
+    height: 30px;
+}
+.topbar .notifications img{
+    width: 30px;
+    height: 30px;
 }
 .right .user {
     width: 40px;
@@ -102,13 +120,24 @@ ul {
     line-height: 3.5rem;
     display: flex;
     align-items: center;
+    padding: 0 10px;
+}
+.sidebar .navlinks ul li:hover{
+    background: var(--gray);
+    border-radius: 7px;
 }
 .sidebar .navlinks ul li a {
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
+.sidebar .navlinks ul li a .nav-icon{
+    margin-top: 5px;
+} 
 .sidebar .navlinks ul li a img{
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width: 25px;
     margin: 0;
 }
 .sidebar .subscriptions li {
@@ -138,11 +167,11 @@ ul {
 .video-content .videos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
     padding: 20px;
+    gap: 30px;
 }
 .videos .video{
-    min-width: 270px;
+    min-width: 260px;
     width: 100%;
 }
 .video .thambnail {
@@ -155,9 +184,8 @@ ul {
     border-radius: 10px;
 }
 .video .video-info{
+    min-width: 260px;
     display: flex;
-    flex-direction: row;
-    gap: 15px;
 }
 .info-top .channel-logo {
     height: 50px;
@@ -182,13 +210,15 @@ ul {
     height: 100%;
     width: 100%;
 }
+.right-info {
+    margin-left: 20px;
+}
 .right-info .channel-name h3{
     font-size: 16px;
     font-weight: 400;
 
 }
-.views-and-upload-time {
+.right-info .video-buttom-info {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
 }
