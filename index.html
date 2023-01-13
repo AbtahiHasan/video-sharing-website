@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vidtube</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
     <!-- remix icon cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- include css file -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- responsive stylesheet  -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header class="topbar">
         <div class="left">
                 <div class="toggle-icon"><i class="ri-bar-chart-horizontal-line"></i></div>
-                <div class="logo-container"><img src="assets/images/logo.png"></div>
+                <div class="logo-container"><img src="assets/images/logo.png" class="desktop-logo"><img src="assets/images/fav.png" class="mobile-logo"></div>
         </div>
         <div class="middle">
             <div class="search-box">
@@ -32,7 +35,7 @@
         </div>
     </header>
     <main id="body-contents">
-        <aside class="sidebar small">
+        <aside class="sidebar">
             <div class="navlinks">
                 <ul>
                     <li><a href="#"><div class="nav-icon"><img src="assets/images/home.png"></div><div class="nav-name">Home</div></a></li>
@@ -56,8 +59,14 @@
             </div>
         </aside>
         <!-- main vidoe section  -->
-        <section class="video-content full">
+        <section class="video-content">
             <div class="container">
+                <div class="banner">
+                    <!-- <img src="assets/images/banner.jpg"> -->
+                    <h1>Shere Your Creativity</h1>
+                    <h2>YouTube channel @abtahihasan</h2>
+                    <h2>Website: abtahihasan.com</h2>
+                </div>
                 <div class="videos">
                     <div class="video">
                         <a href="pages/video-page.html"><div class="thambnail"><img src="assets/images/thumbnail1.png" loading="lazy"></div>

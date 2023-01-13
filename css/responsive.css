@@ -1,0 +1,29 @@
+@media (max-width: 576px) {
+    .mobile-logo {
+        display: block;
+    }
+    .logo-container img{
+        height: 47px;
+        width: 50px;
+    }
+    .topbar .middle .search-box{
+        width: 95%;
+        margin-left: 7px;
+    }
+    .topbar .middle .search-box .search-input {
+        width: 95%;
+    }
+    .desktop-logo,.toggle-icon,.voice-search,.upload,.notifications,.sidebar,.banner {
+        display: none;
+    }
+    .video-content{
+        width: 100%;
+        left: 0;
+        position: absolute;
+
+    }
+    .video-content .videos{
+        grid-template-columns: repeat(1, 1fr);
+    } 
+
+}
