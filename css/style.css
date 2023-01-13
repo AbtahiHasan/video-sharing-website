@@ -10,6 +10,7 @@
     --white: #ffffff;
     --heading-color: #0F0F26;
     --gray: #F2F2F2;
+    --scroll-bar-color: #bdc3c7;
     /* width */
     --max: 1440px;
 }
@@ -34,11 +35,12 @@ ul {
     display: flex;
     justify-content: space-between;
     padding:  10px 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-color: var(--white);
+    z-index: 999;
 }
 .toggle-icon i{
     font-size: 30px;
@@ -112,7 +114,35 @@ ul {
 .sidebar {
     width: 280px;
     padding: 20px;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 99;
+    overflow: scroll;
+    overflow-x: hidden;
 }
+/* width */
+.sidebar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .sidebar::-webkit-scrollbar-track {
+    background: var(--white);
+  }
+  
+  /* Handle */
+  .sidebar::-webkit-scrollbar-thumb {
+    background: var(--white);
+    border-radius: 10px;
+  }
+  .sidebar:hover::-webkit-scrollbar-thumb {
+    background: var(--scroll-bar-color);
+    border-radius: 10px;
+  }
+  
 .sidebar .navlinks ul{
     list-style: none;
 }
@@ -164,6 +194,12 @@ ul {
     margin: 0;
 }
 /* main video content  */
+.video-content{
+    width: calc(100% - 280px);
+    position: absolute;
+    left: 280px;
+    margin-top: 70px;
+}
 .video-content .videos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
