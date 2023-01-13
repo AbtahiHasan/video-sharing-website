@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --border-color: #0F0F0F;
+    --white: #ffffff;
+    --heading-color: #0F0F26;
+    --gray: #F2F2F2;
+    /* width */
+    --max: 1440px;
+}
+/* common codes  */
+a {
+    text-decoration: none;
+    color: var(--border-color)
+}
+ul {
+    list-style: none;
+}
+.container {
+    max-width: var(--max);
+    margin: 0 auto;
+}
+#body-contents {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+}
+/* topbar  */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding:  10px 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+}
+.toggle-icon i{
+    font-size: 35px;
+}
+.topbar .left,
+.topbar .middle,
+.topbar .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.topbar .middle .search-box{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+}
+.topbar .middle .search-box .search-input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.topbar .middle .search-box .search-btn {
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-left: 1px solid var(--border-color);
+}
+.topbar .middle .search-box .search-btn i {
+    font-size: 25px;
+}
+.topbar .voice-search {
+    font-size: 30px;
+}
+.right .user {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.right .user img{
+    width: 100%;
+    height: 100%;
+}
+/* sidebar  */
+.sidebar {
+    width: 280px;
+    padding: 20px;
+}
+.sidebar .navlinks ul{
+    list-style: none;
+}
+.sidebar .navlinks ul li{
+    line-height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+.sidebar .navlinks ul li a {
+    font-size: 18px;
+}
+.sidebar .navlinks ul li a img{
+    height: 40px;
+    width: 40px;
+    margin: 0;
+}
+.sidebar .subscriptions li {
+    line-height: 34px;
+    margin: 20px 0;
+}
+.sidebar .subscriptions li a{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+.sidebar .navlinks ul li a .channel-logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.sidebar .navlinks ul li a .channel-logo img{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+/* main video content  */
+.video-content .videos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+.videos .video{
+    min-width: 270px;
+    width: 100%;
+}
+.video .thambnail {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.video .thambnail img{
+    width: 100%;
+    border-radius: 10px;
+}
+.video .video-info{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.info-top .channel-logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.video-title h2{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2rem;
+    overflow: hidden;
+    font-weight: 500;
+}
+.left-logo .channel-logo {
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.left-logo .channel-logo img{
+    height: 100%;
+    width: 100%;
+}
+.right-info .channel-name h3{
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.views-and-upload-time {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
